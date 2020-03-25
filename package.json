@@ -11,11 +11,7 @@
     "type": "git",
     "url": "https://github.com/shawtung/vscode-commentlinedown.git"
   },
-  "icon": "assets/icon.png",
-  "galleryBanner": {
-    "color": "#C80000",
-    "theme": "dark"
-  },
+  "icon": "icon.png",
   "categories": [
     "Other"
   ],
