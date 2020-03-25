@@ -4,17 +4,17 @@ If you have migrated from Webstorm to VSCode, you may find that the `toggle line
 
 ## Feature
 
-Auto move cursor to the next line after toggle line comment.
+Auto exec command `cursorDown` after toggle line comment, moving cursor to the next line.
 
 ## Configuration
 
-* `commentLineDown.cursorPosition`:  
+* `commentLineDown.cursorPosition` - specifies the inline position of cursor after cursor down.  
 
-`home`  
-![home](images/home.gif)
+  * `home`  
+    ![home](images/home.gif)
 
-`in situ` (default)  
-![in situ](images/insitu.gif)
+  * `in situ` (default)  
+    ![in situ](images/insitu.gif)
 
-`end`  
-![end](images/end.gif)
+  * `end`  
+    ![end](images/end.gif)
