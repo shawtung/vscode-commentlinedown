@@ -2,7 +2,7 @@
   "name": "vscode-commentlinedown",
   "displayName": "Comment Line Down",
   "description": "Auto move cursor to the next line after toggle line comment.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "vscode": "^1.43.0"
   },
