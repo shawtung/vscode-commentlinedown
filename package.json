@@ -7,10 +7,20 @@
 		"vscode": "^1.43.0"
   },
   "publisher": "shawtung",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shawtung/vscode-commentlinedown.git"
+  },
+  "icon": "assets/icon.png",
+  "galleryBanner": {
+    "color": "#C80000",
+    "theme": "dark"
+  },
 	"categories": [
 		"Other"
   ],
   "keywords": ["line comment", "next line"],
+  "homepage": "https://github.com/shawtung/vscode-commentlinedown/blob/master/README.md",
 	"activationEvents": [
 		"*"
 	],
