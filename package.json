@@ -1,0 +1,64 @@
+{
+	"name": "vscode-commentlinedown",
+	"displayName": "Comment Line Down",
+	"description": "Auto move to next line after toggle line comment, like IntelliJ.",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.43.0"
+  },
+  "publisher": "shawtung",
+	"categories": [
+		"Other"
+  ],
+  "keywords": ["line comment", "next line"],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension.js",
+	"contributes": {
+    "keybindings": [
+      {
+        "command": "commentLineDown.commentLineAndCursorDown",
+        "key": "ctrl+/",
+        "mac": "cmd+/",
+        "when": "editorTextFocus && !editorReadonly"
+      }
+    ],
+    "configuration": {
+      "title": "Comment Line Down",
+      "properties": {
+        "commentLineDown.cursorPosition": {
+          "description": "Specify the inline position of cursor after cursor down.",
+          "type": "string",
+          "default": "in situ",
+          "enum": [
+            "home",
+            "in situ",
+            "end"
+          ],
+          "enumDescriptions": [
+            "Move cursor to the left most of the code line (spaces excluded).",
+            "Doesn't move.",
+            "Move cursor to the right most of the code line."
+          ]
+        }
+      }
+    }
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^7.0.1",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.43.0",
+		"eslint": "^6.8.0",
+		"glob": "^7.1.6",
+		"mocha": "^7.0.1",
+		"typescript": "^3.7.5",
+		"vscode-test": "^1.3.0"
+	}
+}
